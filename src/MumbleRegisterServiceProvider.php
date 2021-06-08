@@ -19,16 +19,16 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-namespace Author\Seat\YourPackage;
+namespace WarAndWormhole\Seat\MumbleRegister;
 
 use Seat\Services\AbstractSeatPlugin;
 
 /**
- * Class YourPackageServiceProvider.
+ * Class MumbleRegisterServiceProvider.
  *
- * @package Author\Seat\YourPackage
+ * @package WarAndWormhole\Seat\MumbleRegister
  */
-class YourPackageServiceProvider extends AbstractSeatPlugin
+class MumbleRegisterServiceProvider extends AbstractSeatPlugin
 {
     public function boot()
     {
@@ -147,7 +147,7 @@ class YourPackageServiceProvider extends AbstractSeatPlugin
      */
     public function getName(): string
     {
-        return 'Your Package Friendly Name';
+        return 'SeAT Mumble Register';
     }
 
     /**
@@ -159,7 +159,7 @@ class YourPackageServiceProvider extends AbstractSeatPlugin
      */
     public function getPackageRepositoryUrl(): string
     {
-        return 'https://example.com';
+        return 'https://github.com/waw-eve/seat-mumble-register';
     }
 
     /**
@@ -171,7 +171,7 @@ class YourPackageServiceProvider extends AbstractSeatPlugin
      */
     public function getPackagistPackageName(): string
     {
-        return 'your-package';
+        return 'seat-mumble-register';
     }
 
     /**
@@ -183,7 +183,7 @@ class YourPackageServiceProvider extends AbstractSeatPlugin
      */
     public function getPackagistVendorName(): string
     {
-        return 'author';
+        return 'alliancewaw';
     }
 
     /**
