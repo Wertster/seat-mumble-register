@@ -2,7 +2,7 @@
 /*
 This file is part of SeAT
 
-Copyright (C) 2015 to 2020  Leon Jacobs
+Copyright (C) 2021  Kagurazaka Nyaa <developer@waw-eve.com>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -34,9 +34,6 @@ class MumbleRegisterServiceProvider extends AbstractSeatPlugin
     {
         $this->add_routes();
 
-        // Uncomment this block to add API documentation
-        // $this->add_api_endpoints();
-
         $this->add_publications();
 
         $this->add_views();
@@ -44,24 +41,15 @@ class MumbleRegisterServiceProvider extends AbstractSeatPlugin
         $this->add_translations();
 
         $this->add_migrations();
-
-        // Uncomment this block to extend imported SDE tables
-        // $this->add_sde_tables();
     }
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/Config/yourpackage.config.php', 'yourpackage.config');
-        $this->mergeConfigFrom(__DIR__ . '/Config/yourpackage.locale.php', 'yourpackage.locale');
+        $this->mergeConfigFrom(__DIR__ . '/Config/mumble.config.php', 'mumble.config');
+        $this->mergeConfigFrom(__DIR__ . '/Config/mumble.locale.php', 'mumble.locale');
 
         // Overload sidebar with your package menu entries
         $this->mergeConfigFrom(__DIR__ . '/Config/Menu/package.sidebar.php', 'package.sidebar');
-
-        // Uncomment this block to overload character menu
-        // $this->mergeConfigFrom(__DIR__ . '/Config/Menu/package.character.php', 'package.character.menu');
-
-        // Uncomment this block to overload corporation menu
-        // $this->mergeConfigFrom(__DIR__ . '/Config/Menu/package.corporation.php', 'package.corporation.menu');
 
         // Register generic permissions
         $this->registerPermissions(__DIR__ . '/Config/Permissions/other.php', 'other');
@@ -82,25 +70,14 @@ class MumbleRegisterServiceProvider extends AbstractSeatPlugin
     }
 
     /**
-     * Import API annotations used to generate Swagger documentation (using Open Api Specifications syntax).
-     */
-    private function add_api_endpoints()
-    {
-        $this->registerApiAnnotationsPath([
-            __DIR__ . '/Http/Resources',
-            __DIR__ . '/Http/Controllers/Api/V2',
-        ]);
-    }
-
-    /**
      * Add content which must be published (generally, configuration files or static ones).
      */
     private function add_publications()
     {
         $this->publishes([
             __DIR__ . '/resources/css' => public_path('web/css'),
-            __DIR__ . '/resources/img' => public_path('your-package/img'),
-            __DIR__ . '/resources/js' => public_path('your-package/js'),
+            __DIR__ . '/resources/img' => public_path('mumble/img'),
+            __DIR__ . '/resources/js' => public_path('mumble/js'),
         ], ['public', 'seat']);
     }
 
@@ -109,7 +86,7 @@ class MumbleRegisterServiceProvider extends AbstractSeatPlugin
      */
     private function add_translations()
     {
-        $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'yourpackage');
+        $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'mumble');
     }
 
     /**
@@ -117,17 +94,7 @@ class MumbleRegisterServiceProvider extends AbstractSeatPlugin
      */
     private function add_views()
     {
-        $this->loadViewsFrom(__DIR__ . '/resources/views', 'yourpackage');
-    }
-
-    /**
-     * Add SDE tables to be imported.
-     */
-    private function add_sde_tables()
-    {
-        $this->registerSdeTables([
-            'mapJumps',
-        ]);
+        $this->loadViewsFrom(__DIR__ . '/resources/views', 'mumble');
     }
 
     /**
@@ -193,6 +160,6 @@ class MumbleRegisterServiceProvider extends AbstractSeatPlugin
      */
     public function getVersion(): string
     {
-        return config('yourpackage.config.version');
+        return config('mumble.config.version');
     }
 }

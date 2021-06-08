@@ -21,10 +21,16 @@
  */
 
 return [
-    // Describing generic permissions is done here.
-    // Refer to the web package for a structure reference.
-    'other_permission_name' => [
-        'label' => 'mumble::permissions.other_permission_name_label',
-        'description' => 'mumble::permissions.other_permission_name_description',
-    ]
+
+    'languages' => [
+        [
+            'short' => 'en',
+            'full'  => 'English',
+        ],
+        [
+            'short' => 'zh-CN',
+            'full'  => 'Chinese',
+        ],
+    ],
+
 ];

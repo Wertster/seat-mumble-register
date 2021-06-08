@@ -2,7 +2,7 @@
 /*
 This file is part of SeAT
 
-Copyright (C) 2015 to 2020  Leon Jacobs
+Copyright (C) 2021  Kagurazaka Nyaa <developer@waw-eve.com>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -23,18 +23,18 @@ return [
 
     // Integrating with the SeAT menu is defined here.
     // Refer to the web package for a structure reference.
-    'your-package' => [
+    'mumble' => [
         'name' => 'menu-entry-name',
-        'label' => 'yourpackage::menu.main_level',
+        'label' => 'mumble::menu.main_level',
         'plural' => true,
         'icon' => 'fas fa-certificate',
-        'route_segment' => 'yourpackage',
+        'route_segment' => 'mumble',
         'entries' => [
             [
                 'name' => 'menu-sub-entry-name',
-                'label' => 'yourpackage::menu.sub_level',
+                'label' => 'mumble::menu.sub_level',
                 'icon' => 'fas fa-th-list',
-                'route' => 'your-package.home',
+                'route' => 'mumble.home',
             ],
         ],
     ],

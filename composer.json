@@ -16,7 +16,7 @@
     "homepage": "https://github.com/waw-eve/seat-mumble-register",
     "autoload": {
         "psr-4": {
-            "Author\\Seat\\YourPackage\\": "src/"
+            "WarAndWormhole\\Seat\\MumbleRegister\\": "src/"
         }
     },
     "minimum-stability": "dev",
@@ -34,7 +34,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Author\\Seat\\YourPackage\\WebServiceProvider"
+                "WarAndWormhole\\Seat\\MumbleRegister\\MumbleRegisterServiceProvider"
             ]
         }
     }

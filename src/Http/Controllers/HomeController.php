@@ -2,7 +2,7 @@
 /*
 This file is part of SeAT
 
-Copyright (C) 2015 to 2020  Leon Jacobs
+Copyright (C) 2021  Kagurazaka Nyaa <developer@waw-eve.com>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -19,14 +19,14 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-namespace Author\Seat\YourPackage\Http\Controllers;
+namespace WarAndWormhole\Seat\MumbleRegister\Http\Controllers;
 
 use Seat\Web\Http\Controllers\Controller;
 
 /**
  * Class HomeController.
  *
- * @package Author\Seat\YourPackage\Http\Controllers
+ * @package WarAndWormhole\Seat\MumbleRegister\Http\Controllers
  */
 class HomeController extends Controller
 {
@@ -36,6 +36,6 @@ class HomeController extends Controller
     public function getHome()
     {
 
-        return view('yourpackage::myview');
+        return view('mumble::myview');
     }
 }

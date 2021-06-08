@@ -3,7 +3,7 @@
 /*
  * This file is part of SeAT
  *
- * Copyright (C) 2015 to 2020 Leon Jacobs
+ * Copyright (C) 2021  Kagurazaka Nyaa <developer@waw-eve.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,8 +24,8 @@ return [
     // Describing character permissions is done here.
     // Refer to the web package for a structure reference.
     'character_permission_name' => [
-        'label' => 'yourpackage::permissions.character_permission_name_label',
-        'description' => 'yourpackage::permissions.character_permission_name_description',
+        'label' => 'mumble::permissions.character_permission_name_label',
+        'description' => 'mumble::permissions.character_permission_name_description',
         // 'division' => 'industrial', // can be one of this list [military, assets, financial, industrial]
     ]
 ];

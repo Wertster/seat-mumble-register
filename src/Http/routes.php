@@ -2,7 +2,7 @@
 /*
 This file is part of SeAT
 
-Copyright (C) 2015 to 2020  Leon Jacobs
+Copyright (C) 2021  Kagurazaka Nyaa <developer@waw-eve.com>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -21,14 +21,13 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 // Namespace all of the routes for this package.
 Route::group([
-    'namespace'  => 'Author\Seat\YourPackage\Http\Controllers',
+    'namespace'  => 'WarAndWormhole\Seat\MumbleRegister\Http\Controllers',
     'middleware' => ['web', 'auth', 'locale'],
 ], function () {
 
     // Your route definitions go here.
-    Route::get('/your-package/home', [
-        'as'   => 'your-package.home',
+    Route::get('/mumble/home', [
+        'as'   => 'mumble.home',
         'uses' => 'HomeController@getHome'
     ]);
-
 });
