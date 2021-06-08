@@ -1,13 +1,19 @@
 {
-    "name": "author/your-package",
-    "description": "Your package description",
+    "name": "alliancewaw/seat-mumble-register",
+    "description": "This plugin provide an extension to generate a certificate for SeAT user and regist it to mumble server",
     "license": "GPL-3.0-or-later",
+    "type": "seat-plugin",
+    "keywords": [
+        "seat",
+        "eve-online"
+    ],
     "authors": [
         {
-            "name": "Leon Jacobs",
-            "email": "leonja511@gmail.com"
+            "name": "Kagurazaka Nyaa",
+            "email": "developer@waw-eve.com"
         }
     ],
+    "homepage": "https://github.com/waw-eve/seat-mumble-register",
     "autoload": {
         "psr-4": {
             "Author\\Seat\\YourPackage\\": "src/"
@@ -18,7 +24,8 @@
     "require": {
         "php": "^7.3",
         "laravel/framework": "^6.2",
-        "eveseat/web": "^4.0"
+        "eveseat/web": "^4.0",
+        "phpseclib/phpseclib": "~3.0"
     },
     "require-dev": {
         "orchestra/testbench": "^4.0",
