@@ -57,12 +57,21 @@ class RegisterController extends Controller
             'email' => $request->input('mumble-email')
         ));
 
+        $url = setting('mumble.agent_url', true);
         $cipher = new Blowfish('ecb');
         $cipher->setKey(setting('mumble.encrypt_key', true));
 
         $req_encrypted = base64_encode($cipher->encrypt($req));
+        $headerArray = array("Content-type:base64;charset='utf-8'", "Accept:base64");
+        $curl = curl_init($url);
+        curl_setopt($curl, CURLOPT_POST, 1);
+        curl_setopt($curl, CURLOPT_HTTPHEADER, $headerArray);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, $req_encrypted);
+        $output = curl_exec($curl);
+        curl_close($curl);
 
         return redirect()->back()
-            ->with('success', $req + '|' + $req_encrypted);
+            ->with('success', $output);
     }
 }
