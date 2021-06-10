@@ -58,6 +58,6 @@ class RegisterController extends Controller
 
 
         return redirect()->back()
-            ->with('debug', $req);
+            ->with('success', $req);
     }
 }
