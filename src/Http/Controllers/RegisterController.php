@@ -71,7 +71,8 @@ class RegisterController extends Controller
         $output = curl_exec($curl);
         curl_close($curl);
 
-        return redirect()->back()
-            ->with('success', $output);
+        $cert = $cipher->decrypt(base64_decode($output));
+
+        return response($cert)->header('Content-Type', 'application/x-pkcs12');
     }
 }
