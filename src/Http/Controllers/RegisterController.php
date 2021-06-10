@@ -48,7 +48,7 @@ class RegisterController extends Controller
     public function update(Request $request)
     {
         $request->validate([
-            'mumble-email'  => 'required|string',
+            'mumble-email'  => 'required|email',
         ]);
 
         $req = json_encode(array(

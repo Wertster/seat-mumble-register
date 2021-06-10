@@ -23,4 +23,6 @@
 return [
     'mumble_user'       => 'Mumble 用户',
     'mumble_user_desc'  => '请确认你要注册到 mumble 服务器的角色，如果不正确，请通过右上角切换角色来选择你的主角色',
+    'mumble_email'      => 'Mumble 电子邮件',
+    'mumble_email_desc' => '填写电子邮箱地址，此邮箱地址用于生成数字证书',
 ];

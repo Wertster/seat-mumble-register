@@ -49,11 +49,11 @@ class SettingsController extends Controller
     public function update(Request $request)
     {
         $request->validate([
-            'agent-url'                 => 'required|string',
+            'agent-url'                 => 'required|url',
             'encrypt-key-algorithm'     => 'required|string',
             'encrypt-cipher-algorithm'  => 'required|string',
             'encrypt-key'               => 'required|string',
-            'encrypt-iv'                => 'required|string',
+            'encrypt-iv'                => 'alpha_num|size:16',
         ]);
 
         setting(['mumble.agent_url', $request->input('agent-url')], true);

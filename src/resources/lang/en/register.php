@@ -23,4 +23,6 @@
 return [
     'mumble_user'       => 'Mumble User',
     'mumble_user_desc'  => 'Please confirm the character you want to register to the mumble server. If it is not correct, please select your main character by Switch Character in the upper right corner',
+    'mumble_email'      => 'Mumble email address',
+    'mumble_email_desc' => 'Fill in the email address, this email address is used to generate the digital certificate',
 ];
