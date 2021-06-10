@@ -22,16 +22,32 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 // Namespace all of the routes for this package.
 Route::group([
     'namespace'  => 'WarAndWormhole\Seat\MumbleRegister\Http\Controllers',
-    'middleware' => ['web', 'auth', 'locale'],
 ], function () {
 
-    // Your route definitions go here.
-    Route::get('/mumble/register', [
-        'as'   => 'mumble.register',
-        'uses' => 'MumbleController@getRegister'
-    ]);
-    Route::get('/mumble/settings', [
-        'as'   => 'mumble.settings',
-        'uses' => 'MumbleController@getSettings'
-    ]);
+    Route::group([
+        'prefix'     => 'mumble',
+        'middleware' => ['web', 'auth', 'locale'],
+    ], function () {
+
+        Route::group([
+            'middleware' => 'can:mumble.register',
+        ], function () {
+            Route::get('/register')
+                ->name('mumble.register')
+                ->uses('RegisterController@index');
+            Route::post('/register')
+                ->name('mumble.register')
+                ->uses('RegisterController@update');
+        });
+        Route::group([
+            'middleware' => 'can:global.superuser',
+        ], function () {
+            Route::get('/settings')
+                ->name('mumble.settings')
+                ->uses('SettingsController@index');
+            Route::post('/settings')
+                ->name('mumble.settings')
+                ->uses('SettingsController@update');
+        });
+    });
 });

@@ -24,23 +24,24 @@ return [
     // Integrating with the SeAT menu is defined here.
     // Refer to the web package for a structure reference.
     'mumble' => [
-        'name' => 'Mumble Register',
-        'label' => 'mumble::menu.main_level',
-        'plural' => true,
-        'icon' => 'fas fa-key',
+        'name'          => 'Mumble Register',
+        'label'         => 'mumble::menu.main_level',
+        'icon'          => 'fas fa-plug',
         'route_segment' => 'mumble',
         'entries'       => [
             [
-                'name'  => 'Register',
-                'label' => 'mumble::menu.register',
-                'icon'  => 'fas fa-shield-alt',
-                'route' => 'mumble.register',
+                'name'          => 'Register',
+                'label'         => 'mumble::menu.register',
+                'icon'          => 'fas fa-key',
+                'permission'    => 'mumble.register',
+                'route'         => 'mumble.register',
             ],
             [
-                'name'  => 'Settings',
-                'label' => 'mumble::menu.settings',
-                'icon'  => 'fas fa-cogs',
-                'route' => 'mumble.settings',
+                'name'          => 'Settings',
+                'label'         => 'mumble::menu.settings',
+                'icon'          => 'fas fa-cogs',
+                'permission'    => 'global.superuser',
+                'route'         => 'mumble.settings',
             ],
         ],
     ],

@@ -27,8 +27,4 @@ return [
         'label' => 'mumble::permissions.register_to_mumble_label',
         'description' => 'mumble::permissions.register_to_mumble_description',
     ],
-    'settings' => [
-        'label' => 'mumble::permissions.edit_settings_label',
-        'description' => 'mumble::permissions.edit_settings_description',
-    ]
 ];
