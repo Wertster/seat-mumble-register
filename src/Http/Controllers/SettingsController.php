@@ -53,7 +53,7 @@ class SettingsController extends Controller
             'encrypt-key-algorithm'     => 'required|string',
             'encrypt-cipher-algorithm'  => 'required|string',
             'encrypt-key'               => 'required|string',
-            'encrypt-iv'                => 'alpha_num|size:16',
+            'encrypt-iv'                => 'nullable|alpha_num|size:16',
         ]);
 
         setting(['mumble.agent_url', $request->input('agent-url')], true);
