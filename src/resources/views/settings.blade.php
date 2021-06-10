@@ -54,7 +54,7 @@
             </div>
             <div class="card-footer clearfix">
                 <button type="submit" class="btn btn-success float-right"
-                    form="seat-connector-setup">{{ trans('web::seat.confirm_setup') }}</button>
+                    form="seat-mumble-setup">{{ trans('web::seat.confirm_setup') }}</button>
             </div>
         </div>
     </div>
