@@ -21,9 +21,14 @@
  */
 
 return [
-    'agent_url'                 => '后端代理地址',
-    'encrypt_key_algorithm'     => '通信密钥算法',
-    'encrypt_cipher_algorithm'  => '通信加密算法',
-    'encrypt_key'               => '通信加密密钥',
-    'encrypt_iv'                => '通信加密初始向量',
+    'agent_url'                     => '后端代理地址',
+    'agent_url_desc'                => '此处填写后端代理地址，需要先部署 https://hub.docker.com/r/alliancewaw/seat-mumble-register',
+    'encrypt_key_algorithm'         => '通信密钥算法',
+    'encrypt_key_algorithm_desc'    => '通信密钥算法，默认情况下是Blowfish',
+    'encrypt_cipher_algorithm'      => '通信加密算法',
+    'encrypt_cipher_algorithm_desc' => '通信加密算法，默认情况下是Blowfish',
+    'encrypt_key'                   => '通信加密密钥',
+    'encrypt_key_desc'              => '通信加密密钥，用于加密与后端代理的通讯',
+    'encrypt_iv'                    => '通信加密初始向量',
+    'encrypt_iv_desc'               => '通信加密初始向量，仅当使用的加密算法需要此变量时有效',
 ];

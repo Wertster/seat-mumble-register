@@ -17,6 +17,7 @@
                     <label for="agent-url">{{ trans('mumble::settings.agent_url') }}</label>
                     <input type="text" id="agent-url" name="agent-url" class="form-control"
                         value="{{ setting('mumble.agent_url', true) }}" />
+                    <span class="help-block">{{ trans('mumble::settings.agent_url_desc') }}</span>
                 </div>
                 <div class="form-group">
                     <label for="encrypt-key-algorithm">{{ trans('mumble::settings.encrypt_key_algorithm') }}</label>
@@ -27,6 +28,7 @@
                         <input type="text" id="encrypt-key-algorithm" name="encrypt-key-algorithm" class="form-control"
                             value="{{ setting('mumble.encrypt_key_algorithm', true) }}" />
                     @endif
+                    <span class="help-block">{{ trans('mumble::settings.agent_url_desc') }}</span>
                 </div>
                 <div class="form-group">
                     <label for="encrypt-cipher-algorithm">{{ trans('mumble::settings.encrypt_cipher_algorithm') }}</label>
@@ -37,16 +39,19 @@
                         <input type="text" id="encrypt-cipher-algorithm" name="encrypt-cipher-algorithm"
                             class="form-control" value="{{ setting('mumble.encrypt_cipher_algorithm', true) }}" />
                     @endif
+                    <span class="help-block">{{ trans('mumble::settings.agent_url_desc') }}</span>
                 </div>
                 <div class="form-group">
                     <label for="encrypt-key">{{ trans('mumble::settings.encrypt_key') }}</label>
                     <input type="text" id="encrypt-key" name="encrypt-key" class="form-control"
                         value="{{ setting('mumble.encrypt_key', true) }}" />
+                    <span class="help-block">{{ trans('mumble::settings.agent_url_desc') }}</span>
                 </div>
                 <div class="form-group">
                     <label for="encrypt-iv">{{ trans('mumble::settings.encrypt_iv') }}</label>
                     <input type="text" id="encrypt-iv" name="encrypt-iv" class="form-control"
                         value="{{ setting('mumble.encrypt_iv', true) }}" />
+                    <span class="help-block">{{ trans('mumble::settings.agent_url_desc') }}</span>
                 </div>
             </form>
         </div>
