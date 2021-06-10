@@ -60,7 +60,7 @@ class RegisterController extends Controller
         $cipher = new Blowfish('ecb');
         $cipher->setKey(setting('mumble.encrypt_key', true));
 
-        $req_encrypted = $cipher->encrypt($req);
+        $req_encrypted = base64_encode($cipher->encrypt($req));
 
         return redirect()->back()
             ->with('success', $req + '|' + $req_encrypted);
