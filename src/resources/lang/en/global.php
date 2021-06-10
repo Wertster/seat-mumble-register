@@ -21,7 +21,7 @@
  */
 
 return [
-    'browser_title' => 'Browser Title',
-    'page_title' => 'Page Title',
-    'page_subtitle' => 'Page Sub-title',
+    'browser_title' => 'Mumble Register',
+    'page_title' => 'Mumble Register',
+    'page_subtitle' => 'regist you mumble account',
 ];

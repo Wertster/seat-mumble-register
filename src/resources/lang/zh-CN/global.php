@@ -21,7 +21,7 @@
  */
 
 return [
-    'browser_title' => 'Browser Title',
-    'page_title' => 'Page Title',
-    'page_subtitle' => 'Page Sub-title',
+    'browser_title' => 'Mumble 注册工具',
+    'page_title' => 'Mumble 注册工具',
+    'page_subtitle' => '注册你的 mumble 账号',
 ];
