@@ -28,6 +28,7 @@ return [
         'label' => 'mumble::menu.main_level',
         'plural' => true,
         'icon' => 'fas fa-key',
+        'route_segment' => 'mumble',
         'route' => 'mumble.home',
     ],
 ];
