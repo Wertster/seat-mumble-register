@@ -52,7 +52,7 @@ class MumbleRegisterServiceProvider extends AbstractSeatPlugin
         $this->mergeConfigFrom(__DIR__ . '/Config/package.sidebar.php', 'package.sidebar');
 
         // Register generic permissions
-        $this->registerPermissions(__DIR__ . '/Config/mumble.permissions.php', 'other');
+        $this->registerPermissions(__DIR__ . '/Config/mumble.permissions.php', 'mumble');
     }
 
     /**
