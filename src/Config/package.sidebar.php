@@ -40,7 +40,7 @@ return [
                 'name'  => 'Settings',
                 'label' => 'mumble::menu.settings',
                 'icon'  => 'fas fa-cogs',
-                'route' => 'mumble.config',
+                'route' => 'mumble.settings',
             ],
         ],
     ],
