@@ -21,6 +21,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 namespace WarAndWormhole\Seat\MumbleRegister\Http\Controllers;
 
+use Illuminate\Http\Request;
 use Seat\Web\Http\Controllers\Controller;
 
 /**
@@ -37,5 +38,26 @@ class RegisterController extends Controller
     {
 
         return view('mumble::register');
+    }
+
+    /**
+     * @param \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Seat\Services\Exceptions\SettingException
+     */
+    public function update(Request $request)
+    {
+        $request->validate([
+            'mumble-email'  => 'required|string',
+        ]);
+
+        $req = json_encode(array(
+            'name' => auth()->user()->name,
+            'email' => $request->input('mumble-email')
+        ));
+
+
+        return redirect()->back()
+            ->with('debug', $req);
     }
 }
