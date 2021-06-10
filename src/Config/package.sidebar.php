@@ -34,7 +34,7 @@ return [
                 'name'  => 'Register',
                 'label' => 'mumble::menu.register',
                 'icon'  => 'fas fa-shield-alt',
-                'route' => 'mumble.home',
+                'route' => 'mumble.register',
             ],
             [
                 'name'  => 'Settings',
