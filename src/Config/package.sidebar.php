@@ -29,6 +29,19 @@ return [
         'plural' => true,
         'icon' => 'fas fa-key',
         'route_segment' => 'mumble',
-        'route' => 'mumble.home',
+        'entries'       => [
+            [
+                'name'  => 'Register',
+                'label' => 'mumble::menu.register',
+                'icon'  => 'fas fa-shield-alt',
+                'route' => 'mumble.home',
+            ],
+            [
+                'name'  => 'Settings',
+                'label' => 'mumble::menu.settings',
+                'icon'  => 'fas fa-cogs',
+                'route' => 'mumble.config',
+            ],
+        ],
     ],
 ];

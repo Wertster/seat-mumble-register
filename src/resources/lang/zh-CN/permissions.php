@@ -23,4 +23,6 @@
 return [
     'login_to_mumble_label' => '登录到 Mumble',
     'login_to_mumble_description' => '此权限允许用户登录到 Mumble 服务器',
+    'edit_settings_label' => '编辑设置',
+    'edit_settings_description' => '此权限允许用户编辑此插件的设置',
 ];

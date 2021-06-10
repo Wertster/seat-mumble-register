@@ -22,4 +22,6 @@
 
 return [
     'main_level' => 'Mumble Register',
+    'register' => 'Register',
+    'settings' => 'Settings',
 ];

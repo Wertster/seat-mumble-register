@@ -22,6 +22,8 @@
 
 return [
     'browser_title' => 'Mumble 注册工具',
-    'page_title' => 'Mumble 注册工具',
-    'page_subtitle' => '注册你的 mumble 账号',
+    'register_title' => 'Mumble 注册工具',
+    'register_subtitle' => '注册你的 mumble 账号',
+    'settings_title' => '修改设置',
+    'settings_subtitle' => '修改本插件的设定',
 ];

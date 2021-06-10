@@ -22,6 +22,8 @@
 
 return [
     'browser_title' => 'Mumble Register',
-    'page_title' => 'Mumble Register',
-    'page_subtitle' => 'regist you mumble account',
+    'register_title' => 'Mumble Register',
+    'register_subtitle' => 'register you mumble account',
+    'settings_title' => 'Change Settings',
+    'settings_subtitle' => 'change this plugin settings',
 ];

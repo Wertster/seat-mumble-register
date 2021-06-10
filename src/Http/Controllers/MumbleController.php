@@ -24,18 +24,26 @@ namespace WarAndWormhole\Seat\MumbleRegister\Http\Controllers;
 use Seat\Web\Http\Controllers\Controller;
 
 /**
- * Class HomeController.
+ * Class MumbleController.
  *
  * @package WarAndWormhole\Seat\MumbleRegister\Http\Controllers
  */
-class HomeController extends Controller
+class MumbleController extends Controller
 {
     /**
      * @return \Illuminate\View\View
      */
-    public function getHome()
+    public function getRegister()
     {
 
-        return view('mumble::myview');
+        return view('mumble::register');
+    }
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function getSettings()
+    {
+
+        return view('mumble::settings');
     }
 }

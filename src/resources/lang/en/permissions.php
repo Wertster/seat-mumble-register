@@ -21,6 +21,8 @@
  */
 
 return [
-    'login_to_mumble_label' => 'Login Mumble',
-    'login_to_mumble_description' => 'This permission allow user login to mumble server.',
+    'register_to_mumble_label' => 'Register Mumble',
+    'register_to_mumble_description' => 'This permission allow user register to mumble server.',
+    'edit_settings_label' => 'Edit Settings',
+    'edit_settings_description' => 'This permission allow user edit this plugin settings.',
 ];

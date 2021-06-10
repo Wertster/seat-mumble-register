@@ -26,8 +26,12 @@ Route::group([
 ], function () {
 
     // Your route definitions go here.
-    Route::get('/mumble/home', [
-        'as'   => 'mumble.home',
-        'uses' => 'HomeController@getHome'
+    Route::get('/mumble/register', [
+        'as'   => 'mumble.register',
+        'uses' => 'MumbleController@getRegister'
+    ]);
+    Route::get('/mumble/settings', [
+        'as'   => 'mumble.settings',
+        'uses' => 'MumbleController@getSettings'
     ]);
 });

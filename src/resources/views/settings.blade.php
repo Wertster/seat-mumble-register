@@ -1,8 +1,8 @@
 @extends('web::layouts.grids.12')
 
 @section('title', trans('mumble::global.browser_title'))
-@section('page_header', trans('mumble::global.page_title'))
-@section('page_description', trans('mumble::global.page_subtitle'))
+@section('page_header', trans('mumble::global.settings_title'))
+@section('page_description', trans('mumble::global.settings_subtitle'))
 
 @section('full')
 
