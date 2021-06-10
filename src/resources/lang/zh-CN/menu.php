@@ -21,7 +21,7 @@
  */
 
 return [
-    'main_level' => 'Mumble 注册工具',
-    'register' => '注册',
-    'settings' => '设置',
+    'main_level'    => 'Mumble 注册工具',
+    'register'      => '注册',
+    'settings'      => '设置',
 ];

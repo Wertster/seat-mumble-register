@@ -21,9 +21,9 @@
  */
 
 return [
-    'browser_title'     => 'Mumble Register',
-    'register_title'    => 'Mumble Register',
-    'register_subtitle' => 'register you mumble account',
-    'settings_title'    => 'Change Settings',
-    'settings_subtitle' => 'change this plugin settings',
+    'agent_url'                 => '后端代理地址',
+    'encrypt_key_algorithm'     => '通信密钥算法',
+    'encrypt_cipher_algorithm'  => '通信加密算法',
+    'encrypt_key'               => '通信加密密钥',
+    'encrypt_iv'                => '通信加密初始向量',
 ];

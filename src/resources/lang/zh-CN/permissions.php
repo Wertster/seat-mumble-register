@@ -21,6 +21,6 @@
  */
 
 return [
-    'login_to_mumble_label' => '登录到 Mumble',
-    'login_to_mumble_description' => '此权限允许用户登录到 Mumble 服务器',
+    'register_to_mumble_label'          => '登录到 Mumble',
+    'register_to_mumble_description'    => '此权限允许用户登录到 Mumble 服务器',
 ];

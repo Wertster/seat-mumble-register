@@ -21,9 +21,9 @@
  */
 
 return [
-    'browser_title'     => 'Mumble Register',
-    'register_title'    => 'Mumble Register',
-    'register_subtitle' => 'register you mumble account',
-    'settings_title'    => 'Change Settings',
-    'settings_subtitle' => 'change this plugin settings',
+    'agent_url'                 => 'Agent URL',
+    'encrypt_key_algorithm'     => 'Encrypt Key Algorithm',
+    'encrypt_cipher_algorithm'  => 'Encrypt Cipher Algorithm',
+    'encrypt_key'               => 'Encrypt Key',
+    'encrypt_iv'                => 'Encrypt IV',
 ];

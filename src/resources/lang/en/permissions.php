@@ -21,6 +21,6 @@
  */
 
 return [
-    'register_to_mumble_label' => 'Register Mumble',
-    'register_to_mumble_description' => 'This permission allow user register to mumble server.',
+    'register_to_mumble_label'          => 'Register Mumble',
+    'register_to_mumble_description'    => 'This permission allow user register to mumble server.',
 ];
