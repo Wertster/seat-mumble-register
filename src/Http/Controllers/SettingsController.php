@@ -21,6 +21,8 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 namespace WarAndWormhole\Seat\MumbleRegister\Http\Controllers;
 
+
+use Illuminate\Http\Request;
 use Seat\Web\Http\Controllers\Controller;
 
 /**
