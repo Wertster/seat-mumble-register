@@ -24,7 +24,7 @@ return [
     // Describing generic permissions is done here.
     // Refer to the web package for a structure reference.
     'other_permission_name' => [
-        'label' => 'mumble::permissions.other_permission_name_label',
-        'description' => 'mumble::permissions.other_permission_name_description',
+        'label' => 'mumble::permissions.login',
+        'description' => 'mumble::permissions.permission_for_login_to_mumble',
     ]
 ];

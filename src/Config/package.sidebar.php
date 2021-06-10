@@ -24,18 +24,10 @@ return [
     // Integrating with the SeAT menu is defined here.
     // Refer to the web package for a structure reference.
     'mumble' => [
-        'name' => 'menu-entry-name',
+        'name' => 'Mumble Register',
         'label' => 'mumble::menu.main_level',
         'plural' => true,
-        'icon' => 'fas fa-certificate',
-        'route_segment' => 'mumble',
-        'entries' => [
-            [
-                'name' => 'menu-sub-entry-name',
-                'label' => 'mumble::menu.sub_level',
-                'icon' => 'fas fa-th-list',
-                'route' => 'mumble.home',
-            ],
-        ],
+        'icon' => 'fas fa-key',
+        'route' => 'mumble.home',
     ],
 ];
