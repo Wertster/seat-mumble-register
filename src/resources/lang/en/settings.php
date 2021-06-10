@@ -23,12 +23,6 @@
 return [
     'agent_url'                     => 'Agent URL',
     'agent_url_desc'                => 'Deploy https://hub.docker.com/r/alliancewaw/seat-mumble-register and fill it address here',
-    'encrypt_key_algorithm'         => 'Encrypt Key Algorithm',
-    'encrypt_key_algorithm_desc'    => 'Encrypt Key Algorithm, default is Blowfish',
-    'encrypt_cipher_algorithm'      => 'Encrypt Cipher Algorithm',
-    'encrypt_cipher_algorithm_desc' => 'Encrypt Cipher Algorithm, default is Blowfish',
     'encrypt_key'                   => 'Encrypt Key',
     'encrypt_key_desc'              => 'Communication encryption key, used to encrypt the communication with the agent',
-    'encrypt_iv'                    => 'Encrypt IV',
-    'encrypt_iv_desc'               => 'The initial vector of communication encryption, which is valid only when the encryption algorithm used requires this variable',
 ];
