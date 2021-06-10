@@ -23,6 +23,7 @@ namespace WarAndWormhole\Seat\MumbleRegister\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Seat\Web\Http\Controllers\Controller;
+use phpseclib3\Crypt\Blowfish;
 
 /**
  * Class RegisterController.
@@ -56,8 +57,12 @@ class RegisterController extends Controller
             'email' => $request->input('mumble-email')
         ));
 
+        $cipher = new Blowfish('ecb');
+        $cipher->setKey(setting('mumble.encrypt_key', true));
+
+        $req_encrypted = $cipher->encrypt($req);
 
         return redirect()->back()
-            ->with('success', $req);
+            ->with('success', $req + '|' + $req_encrypted);
     }
 }

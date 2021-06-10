@@ -50,17 +50,11 @@ class SettingsController extends Controller
     {
         $request->validate([
             'agent-url'                 => 'required|url',
-            'encrypt-key-algorithm'     => 'required|string',
-            'encrypt-cipher-algorithm'  => 'required|string',
             'encrypt-key'               => 'required|string',
-            'encrypt-iv'                => 'nullable|alpha_num|size:16',
         ]);
 
         setting(['mumble.agent_url', $request->input('agent-url')], true);
-        setting(['mumble.encrypt_key_algorithm', $request->input('encrypt-key-algorithm')], true);
-        setting(['mumble.encrypt_cipher_algorithm', $request->input('encrypt-cipher-algorithm')], true);
         setting(['mumble.encrypt_key', $request->input('encrypt-key')], true);
-        setting(['mumble.encrypt_iv', $request->input('encrypt-iv')], true);
 
         return redirect()->back()
             ->with('success', 'Mumber Register settings has been updated.');
