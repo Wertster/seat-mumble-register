@@ -21,6 +21,5 @@
  */
 
 return [
-    'main_level' => 'Your Package Menu',
-    'sub_level' => 'Your Package Sub-Menu',
+    'main_level' => 'Mumble Register',
 ];

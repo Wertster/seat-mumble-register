@@ -21,12 +21,6 @@
  */
 
 return [
-    'character_permission_name_label' => 'Your Plugin Character Permission',
-    'character_permission_name_description' => 'This is an end user help-block',
-
-    'corporation_permission_name_label' => 'Your Plugin Corporation Permission',
-    'corporation_permission_name_description' => 'This is an end user help-block',
-
-    'other_permission_name_label' => 'Your Plugin Other Permission',
-    'other_permission_name_description' => 'This is an end user help-block',
+    'login_to_mumble_label' => 'Login Mumble',
+    'login_to_mumble_description' => 'This permission allow user login to mumble server.',
 ];
