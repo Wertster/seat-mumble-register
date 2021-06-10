@@ -26,7 +26,7 @@ return [
     'mumble' => [
         'name'          => 'Mumble Register',
         'label'         => 'mumble::menu.main_level',
-        'icon'          => 'fas fa-plug',
+        'icon'          => 'fas fa-tools',
         'route_segment' => 'mumble',
         'entries'       => [
             [
